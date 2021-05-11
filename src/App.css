@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.custom-navbar{
+  position: absolute;
+  right:20px;
+
+}
+/* @media (max-width: 991px) {
+  .custom-navbar{
+    position: relative;
+    left:0px;  
+  }
+
+} */
+.navbar{
+  padding:20px;
+}
+
+.split-line {
+  display: inline-block;
+  float: left;
+  border-right: 1px solid #999;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.navbar-logo{
+  margin-top: 2px;
+  position: relative;
+  left: 5px;
+  margin-left: 1px !important;
+  width: 140px;
+  height: 44px;
+  display: block;
+
+}
+.more-type{
+  display: none;
+}
+
+@media only screen and (max-width: 1199px) {
+  .navbar-logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -73px !important;
+    margin-top: -22px;
+  }
+  .more-type{
+    display: block !important;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  .custom-navbar{
+    display: block;
+    position: inherit;
+    width: 100%;
+  }
+  .split-line {
+    display: inline-block !important;
+    float: left;
+    border-right: 100vw solid#999 !important;
+    height: 1px;
+    margin-top: 10px;
+  }
+}
+.navbar{
+  padding-left: 0px; 
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(0,0,0,.55);
+  border-color:transparent !important;
+}
+
+#responsive-navbar-nav{
+  margin-left: 20px;
+}
+
